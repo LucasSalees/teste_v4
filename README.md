@@ -18,11 +18,47 @@ teste_v4/
 
 ## 🚀 Como abrir e testar localmente
 
-Clone este repositório ou baixe os arquivos.
+Existem duas formas principais de acessar o projeto em sua máquina:
 
-Landing Page: Abra o arquivo lp/index.html em qualquer navegador moderno. Recomenda-se o uso da extensão Live Server no VS Code para uma melhor experiência.
+## 1. Preparação
 
-E-mail Marketing: Abra o arquivo email/index.html. Para testar a responsividade, utilize o modo de inspeção do navegador simulando dispositivos móveis.
+Escolha uma das opções abaixo para obter os arquivos:
+
+Via Git: Clone o repositório com o comando:
+
+Bash
+
+```text
+git clone https://github.com/seu-usuario/teste_v4.git
+```
+
+Download Direto: Clique no botão verde "Code" no topo desta página e selecione "Download ZIP". Após baixar, extraia os arquivos em uma pasta de sua preferência.
+
+## 2. Execução dos Componentes
+
+A estrutura do projeto é simples e não requer a instalação de compiladores ou servidores pesados.
+
+📄 Landing Page (LP)
+
+A página principal utiliza HTML5 moderno e CSS Grid/Flexbox.
+
+Navegue até a pasta lp/.
+
+Clique duas vezes no arquivo index.html.
+
+O projeto abrirá automaticamente no seu navegador padrão.
+
+📧 E-mail Marketing
+
+O e-mail foi construído utilizando a técnica de tabelas (table-based) para garantir compatibilidade com diversos gerenciadores (Outlook, Gmail, etc).
+
+Navegue até a pasta email/.
+
+Abra o arquivo index.html no navegador.
+
+Para testar a responsividade: * Pressione F12 (ou clique com o botão direito e vá em Inspecionar).
+
+Clique no ícone de dispositivos móveis (Toggle Device Toolbar) no topo do console para simular a visualização em smartphones.
 
 ---
 
@@ -32,7 +68,13 @@ E-mail Marketing: Abra o arquivo email/index.html. Para testar a responsividade,
 
 Table-based Layout: Utilizei uma estrutura de tabelas aninhadas para garantir que o layout não quebre em clientes de e-mail legados (como Outlook 2010-2019).
 
-CSS Híbrido: Apliquei o CSS crítico de forma inline (cores, fontes, larguras) para garantir a renderização no Gmail e Outlook, mantendo Media Queries no <head> exclusivamente para a transição de layout no mobile.
+CSS Híbrido: Apliquei o CSS crítico de forma inline (cores, fontes, larguras) para garantir a renderização no Gmail e Outlook, mantendo Media Queries no 
+
+```text 
+<head> 
+``` 
+
+textexclusivamente para a transição de layout no mobile.
 
 Double CTA Strategy: Implementei dois botões de ação estrategicamente posicionados (Hero e Final) para otimizar a taxa de conversão (CTR).
 
