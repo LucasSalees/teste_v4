@@ -78,7 +78,7 @@ CSS Híbrido: Apliquei o CSS crítico de forma inline (cores, fontes, larguras) 
 <head> 
 ``` 
 
-textexclusivamente para a transição de layout no mobile.
+exclusivamente para a transição de layout no mobile.
 
 Double CTA Strategy: Implementei dois botões de ação estrategicamente posicionados (Hero e Final) para otimizar a taxa de conversão (CTR).
 
