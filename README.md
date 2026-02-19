@@ -4,7 +4,7 @@ Este repositório contém a entrega do teste técnico para a vaga de Desenvolved
 
 📂 Estrutura do Projeto
 
-
+```text
 teste_v4/
   ├── email/
   │   └── index.html      # Código do E-mail Marketing (Table-based)
@@ -12,6 +12,7 @@ teste_v4/
   │   ├── index.html      # HTML5 Semântico da Landing Page
   │   └── styles.css      # CSS Moderno (Variáveis + Grid/Flexbox)
   └── README.md           # Documentação do projeto
+```
 
 ---
 
@@ -35,7 +36,13 @@ CSS Híbrido: Apliquei o CSS crítico de forma inline (cores, fontes, larguras) 
 
 Double CTA Strategy: Implementei dois botões de ação estrategicamente posicionados (Hero e Final) para otimizar a taxa de conversão (CTR).
 
-Bulletproof Buttons: Os botões foram construídos com preenchimento em células de tabela (<td>) e links em bloco, garantindo que funcionem mesmo com imagens desativadas.
+Bulletproof Buttons: Os botões foram construídos com preenchimento em células de tabela 
+
+```text  
+(<td> )
+```
+
+e links em bloco, garantindo que funcionem mesmo com imagens desativadas.
 
 ### Compatibilidade e Limitações
 
@@ -65,7 +72,11 @@ Mobile-First: A página foi desenhada para priorizar dispositivos móveis, adapt
 
 ### Acessibilidade (A11y)
 
-Semântica: Uso rigoroso de tags HTML5 "(<header>, <main>, <section>, <footer>)".
+Semântica: Uso rigoroso de tags HTML5 
+
+```text
+"(<header>, <main>, <section>, <footer>)".
+```
 
 Navegação: Hierarquia de títulos (h1-h3) lógica e estados de :focus-visible customizados para navegação via teclado.
 
@@ -77,7 +88,11 @@ Opção Escolhida: B) LP v2 - Seção FAQ com Acordeão sem JS
 
 Para este desafio, decidi demonstrar o poder do HTML5 nativo:
 
-Implementação: Utilizei as tags <details> e <summary>.
+Implementação: Utilizei as tags 
+
+```text
+<details> e <summary>.
+```
 
 Diferencial: O acordeão funciona perfeitamente sem nenhuma linha de JavaScript, garantindo performance máxima, menor tempo de carregamento e acessibilidade nativa para leitores de tela.
 
