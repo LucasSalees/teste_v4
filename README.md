@@ -65,7 +65,7 @@ Mobile-First: A página foi desenhada para priorizar dispositivos móveis, adapt
 
 ### Acessibilidade (A11y)
 
-Semântica: Uso rigoroso de tags HTML5 (<header>, <main>, <section>, <footer>).
+Semântica: Uso rigoroso de tags HTML5 "(<header>, <main>, <section>, <footer>)".
 
 Navegação: Hierarquia de títulos (h1-h3) lógica e estados de :focus-visible customizados para navegação via teclado.
 
