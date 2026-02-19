@@ -4,13 +4,14 @@ Este repositório contém a entrega do teste técnico para a vaga de Desenvolved
 
 📂 Estrutura do Projeto
 
+
 teste_v4/
-├── email/
-│   └── index.html      # Código do E-mail Marketing (Table-based)
-├── lp/
-│   ├── index.html      # HTML5 Semântico da Landing Page
-│   └── styles.css      # CSS Moderno (Variáveis + Grid/Flexbox)
-└── README.md           # Documentação do projeto
+  ├── email/
+  │   └── index.html      # Código do E-mail Marketing (Table-based)
+  ├── lp/
+  │   ├── index.html      # HTML5 Semântico da Landing Page
+  │   └── styles.css      # CSS Moderno (Variáveis + Grid/Flexbox)
+  └── README.md           # Documentação do projeto
 
 ---
 
