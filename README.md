@@ -44,7 +44,9 @@ A página principal utiliza HTML5 moderno e CSS Grid/Flexbox.
 
 Navegue até a pasta lp/.
 
-Clique duas vezes no arquivo index.html.
+Clique no arquivo index.html e logo após pressione ctrl + f5.
+
+Selecione o navegador.
 
 O projeto abrirá automaticamente no seu navegador padrão.
 
@@ -54,7 +56,9 @@ O e-mail foi construído utilizando a técnica de tabelas (table-based) para gar
 
 Navegue até a pasta email/.
 
-Abra o arquivo index.html no navegador.
+Clique no arquivo index.html e logo após pressione ctrl + f5.
+
+Selecione o navegador.
 
 Para testar a responsividade: * Pressione F12 (ou clique com o botão direito e vá em Inspecionar).
 
