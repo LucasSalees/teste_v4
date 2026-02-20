@@ -38,6 +38,7 @@ main {
     max-width: var(--max-width);
     margin: 0 auto;
     padding: 20px 20px;
+    border-top: 1px solid #ddd;
 }
 
 /* Seções */
@@ -268,7 +269,7 @@ DESAFIO: FAQ (Accordion sem JS)
 ========================================== */
 
 .faq-section {
-    max-width: 800px;
+    max-width: 1100px;
     margin: 0 auto;
     text-align: left; 
 }
