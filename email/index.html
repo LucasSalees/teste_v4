@@ -1,16 +1,30 @@
 <!DOCTYPE html>
+<!--
+    Desenvolvido com foco em compatibilidade entre clientes de e-mail
+    (Gmail, Outlook, Apple Mail, etc.)
+-->
 <html lang="pt-BR" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
 
 <head>
     <meta charset="UTF-8">
+    
+    <!-- Responsividade: garante bom comportamento em mobile -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Força o modo de renderização mais moderno no Outlook -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Suporte a light e dark mode em clientes compatíveis -->
     <meta name="color-scheme" content="light dark">
     <meta name="supported-color-schemes" content="light dark">
 
     <title>Mesa 4X — Imersão de Marketing</title>
 
     <style>
+        /*
+            Reset básico para evitar estilos inconsistentes
+            entre diferentes clientes de e-mail
+        */
         body {
             margin: 0;
             padding: 0;
@@ -19,6 +33,10 @@
             -ms-text-size-adjust: 100%;
         }
 
+        /*
+            Tabelas são usadas porque são o padrão mais seguro
+            para layouts em e-mail marketing
+        */
         table {
             border-spacing: 0;
             border-collapse: collapse;
@@ -26,18 +44,22 @@
             margin: 0 auto;
         }
 
+        /*
+            Media query simples para mobile
+        */
         @media screen and (max-width: 600px) {
             .container {
                 width: 100% !important;
                 max-width: 100% !important;
             }
 
+            /* Empilha colunas no mobile */
             .stack {
                 display: block !important;
                 width: 100% !important;
             }
 
-            /* Ajuste de espaçamento no mobile para os cards não colarem */
+            /* Espaçamento extra entre blocos empilhados */
             .stack-padding {
                 padding-bottom: 20px !important;
             }
@@ -47,31 +69,47 @@
 
 <body style="background-color: #f4f4f4; font-family: Arial, sans-serif;">
 
+    <!--
+        Preheader:
+        Texto invisível no corpo, mas exibido na prévia do e-mail
+        (muito importante para taxa de abertura)
+    -->
+
     <div style="display: none; max-height: 0px; overflow: hidden;">
         Seu marketing não precisa ser um tiro no escuro. Garanta sua vaga na Mesa 4X.
     </div>
 
+    <!-- Tabela externa que garante fundo consistente em todos os clientes -->
     <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0"
         style="background-color: #f4f4f4;">
         <tr>
             <td align="center">
 
+                <!-- Container principal do e-mail -->
                 <table role="presentation" class="container" width="600" border="0" cellspacing="0" cellpadding="0"
                     style="background-color: #ffffff; width: 100%; max-width: 600px;">
 
+                    <!-- Header / Topo -->
                     <tr>
                         <td style="padding: 20px; text-align: center; background-color: #000000;">
-                            <h1 style="color: #ffffff; margin: 0; font-size: 24px;">Mesa 4X — Imersão de Marketing e Vendas</h1>
+                            <h1 style="color: #ffffff; margin: 0; font-size: 24px;">
+                                Mesa 4X — Imersão de Marketing e Vendas
+                            </h1>
                         </td>
                     </tr>
 
+                    <!-- Bloco Hero -->
                     <tr>
                         <td style="padding: 40px 20px; text-align: center; background-color: #1a1a1a;">
-                            <h2 style="color: #ffffff; font-size: 28px; margin-bottom: 10px; margin-top: 0;">Seu
-                                marketing não precisa ser um tiro no escuro.</h2>
-                            <p style="color: #cccccc; font-size: 18px; margin-bottom: 30px;">Em 2 dias, você sai com um
-                                plano executável para gerar demanda, converter e acompanhar números.</p>
+                            <h2 style="color: #ffffff; font-size: 22px; margin-bottom: 10px; margin-top: 0;">
+                                Seu marketing não precisa ser um tiro no escuro.
+                            </h2>
 
+                            <p style="color: #cccccc; font-size: 18px; margin-bottom: 30px;">
+                                Em 2 dias, você sai com um plano executável para gerar demanda, converter e acompanhar números.
+                            </p>
+
+                            <!-- Botão CTA usando tabela -->
                             <table role="presentation" border="0" cellspacing="0" cellpadding="0" align="center">
                                 <tr>
                                     <td align="center" bgcolor="#ff0000"
@@ -86,48 +124,53 @@
                         </td>
                     </tr>
 
+                    <!-- Bloco de benefícios -->
                     <tr>
                         <td style="padding: 40px 20px;">
                             <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
                                 <tr>
+                                    <!-- Benefício 1 -->
                                     <td class="stack stack-padding" width="33.33%" valign="top"
                                         style="padding: 10px; text-align: center;">
                                         <p style="font-size: 30px; margin: 0 0 10px 0;">🎯</p>
-                                        <p
-                                            style="font-family: Arial, sans-serif; font-size: 14px; color: #333333; font-weight: bold; margin: 0;">
-                                            Frameworks de oferta e posicionamento</p>
+                                        <p style="font-size: 14px; color: #333333; font-weight: bold; margin: 0;">
+                                            Frameworks de oferta e posicionamento
+                                        </p>
                                     </td>
+
+                                    <!-- Benefício 2 -->
                                     <td class="stack stack-padding" width="33.33%" valign="top"
                                         style="padding: 10px; text-align: center;">
                                         <p style="font-size: 30px; margin: 0 0 10px 0;">💡</p>
-                                        <p
-                                            style="font-family: Arial, sans-serif; font-size: 14px; color: #333333; font-weight: bold; margin: 0;">
-                                            Criativos que convertem (e por quê)</p>
+                                        <p style="font-size: 14px; color: #333333; font-weight: bold; margin: 0;">
+                                            Criativos que convertem (e por quê)
+                                        </p>
                                     </td>
+
+                                    <!-- Benefício 3 -->
                                     <td class="stack" width="33.33%" valign="top"
                                         style="padding: 10px; text-align: center;">
                                         <p style="font-size: 30px; margin: 0 0 10px 0;">📊</p>
-                                        <p
-                                            style="font-family: Arial, sans-serif; font-size: 14px; color: #333333; font-weight: bold; margin: 0;">
-                                            Métricas que não mentem (CAC, LTV, ROAS)</p>
+                                        <p style="font-size: 14px; color: #333333; font-weight: bold; margin: 0;">
+                                            Métricas que não mentem (CAC, LTV, ROAS)
+                                        </p>
                                     </td>
                                 </tr>
                             </table>
                         </td>
                     </tr>
 
+                    <!-- Depoimentos -->
                     <tr>
                         <td style="padding: 30px 20px; background-color: #f9f9f9;">
-                            <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <table role="presentation" width="100%">
                                 <tr>
-                                    <td
-                                        style="padding: 10px; border-left: 4px solid #ff0000; font-style: italic; color: #555555; font-family: Arial, sans-serif; font-size: 16px;">
+                                    <td style="padding: 10px; border-left: 4px solid #ff0000; font-style: italic;">
                                         “Parecia confuso. Agora ficou óbvio o que atacar.” — <strong>Camila</strong>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td
-                                        style="padding: 20px 10px 10px 10px; border-left: 4px solid #ff0000; font-style: italic; color: #555555; font-family: Arial, sans-serif; font-size: 16px;">
+                                    <td style="padding: 20px 10px 10px; border-left: 4px solid #ff0000; font-style: italic;">
                                         “Apliquei no dia seguinte e já vi resposta no funil.” — <strong>Renato</strong>
                                     </td>
                                 </tr>
@@ -135,22 +178,20 @@
                         </td>
                     </tr>
 
+                    <!-- Programação -->
                     <tr>
                         <td style="padding: 40px 20px;">
-                            <h3
-                                style="text-align: center; font-family: Arial, sans-serif; color: #000000; margin-top: 0;">
-                                Programação da Imersão</h3>
-                            <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0"
-                                style="margin-top: 20px;">
+                            <h3 style="text-align: center; margin-top: 0;">
+                                Programação da Imersão
+                            </h3>
+                            <table role="presentation" width="100%">
                                 <tr>
-                                    <td
-                                        style="padding: 15px; border-bottom: 1px solid #eeeeee; font-family: Arial, sans-serif; font-size: 16px; color: #333333;">
+                                    <td style="padding: 15px; border-bottom: 1px solid #eeeeee;">
                                         <strong>Dia 1:</strong> Diagnóstico, oferta e aquisição
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td
-                                        style="padding: 15px; font-family: Arial, sans-serif; font-size: 16px; color: #333333;">
+                                    <td style="padding: 15px;">
                                         <strong>Dia 2:</strong> Conversão, operação e escala
                                     </td>
                                 </tr>
@@ -158,17 +199,20 @@
                         </td>
                     </tr>
 
+                    <!-- CTA Final -->
                     <tr>
-                        <td style="padding: 20px 20px 40px 20px; text-align: center; background-color: #f9f9f9;">
-                            <h2 style="font-family: Arial, sans-serif; font-size: 20px; color: #333333;">Pronto para
-                                escalar seu negócio?</h2>
-                            <table role="presentation" border="0" cellspacing="0" cellpadding="0" align="center"
-                                style="margin-top: 20px;">
+                        <td style="padding: 20px 20px 40px; text-align: center; background-color: #f9f9f9;">
+                            <h2 style="font-size: 20px;">
+                                Pronto para escalar seu negócio?
+                            </h2>
+
+                            <table role="presentation" align="center">
                                 <tr>
-                                    <td align="center" bgcolor="#ff0000" style="border-radius: 5px;">
+                                    <td align="center" bgcolor="#ff0000"
+                                        style="border-radius: 5px; color: #ffffff; padding: 15px 25px;">
                                         <a href="#" target="_blank"
-                                            style="font-size: 16px; font-family: Arial, sans-serif; color: #ffffff; text-decoration: none; padding: 12px 20px; display: inline-block; font-weight: bold;">
-                                            Garantir minha vaga agora
+                                            style="font-size: 18px; font-family: Arial, sans-serif; color: #ffffff; text-decoration: none; display: inline-block; font-weight: bold; line-height: 1.5;">
+                                            Quero garantir minha vaga
                                         </a>
                                     </td>
                                 </tr>
@@ -176,9 +220,9 @@
                         </td>
                     </tr>
 
+                    <!-- Rodapé -->
                     <tr>
-                        <td
-                            style="padding: 30px 20px; background-color: #000000; color: #ffffff; text-align: center; font-size: 12px; font-family: Arial, sans-serif;">
+                        <td style="padding: 30px 20px; background-color: #000000; color: #ffffff; text-align: center; font-size: 12px;">
                             <p style="margin: 0;">Mesa 4X - Colli&Co</p>
                             <p style="margin: 5px 0;">Rua Fictícia, 123 - Sorocaba/SP</p>
                             <p style="margin: 15px 0;">
@@ -194,5 +238,4 @@
         </tr>
     </table>
 </body>
-
 </html>

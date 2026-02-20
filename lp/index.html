@@ -1,113 +1,201 @@
 <!DOCTYPE html>
+<!--
+    Landing Page - Mesa 4X
+    Estrutura semântica (header, main, section, footer)
+    Foco em clareza, acessibilidade e fácil manutenção
+-->
 <html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
+
+    <!-- Responsividade: garante bom comportamento em mobile -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mesa 4X — Imersão de Marketing</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+
+    <!-- ===== HEADER / TOPO DO SITE ===== -->
     <header>
+        <!-- Navbar simples -->
         <nav class="navbar">
-            <div class="logo" aria-label="Logo Mesa 4X">Mesa 4X — Imersão de Marketing e Vendas</div>
+            <!--
+                Logo em formato de texto
+                aria-label melhora acessibilidade para leitores de tela
+            -->
+            <div class="logo" aria-label="Logo Mesa 4X">
+                Mesa 4X — Imersão de Marketing e Vendas
+            </div>
         </nav>
     </header>
 
+    <!-- ===== CONTEÚDO PRINCIPAL ===== -->
     <main>
+
+        <!-- ===== HERO SECTION ===== -->
+        <!-- Primeira dobra da página: mensagem principal + CTA -->
         <section class="hero container">
+            
+            <!-- Conteúdo textual do hero -->
             <div class="hero-content">
-                <h1 class="page-title">Seu marketing não precisa ser um tiro no escuro.</h1>
-                <p class="title">Plano executável para gerar demanda e escala em 2 dias.</p>
-                <a href="#planos" class="btn-red" aria-label="Rolar para a seção de planos">Quero garantir minha vaga</a>
+                <!-- Headline principal -->
+                <h1 class="page-title">
+                    Seu marketing não precisa ser um tiro no escuro.
+                </h1>
+
+                <!-- Subtítulo de apoio -->
+                <p class="title">
+                    Plano executável para gerar demanda e escala em 2 dias.
+                </p>
+
+                <!--
+                    Botão CTA principal
+                    Link âncora leva o usuário até a seção de planos
+                -->
+                <a href="#planos" class="btn-red" aria-label="Rolar para a seção de planos">
+                    Quero garantir minha vaga
+                </a>
             </div>
+
+            <!-- Imagem ilustrativa do hero -->
             <div class="hero-image">
-                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=500&q=80" 
-                    alt="Análise de dados de marketing em uma tela de notebook" class="image">
+                <!--
+                    Imagem externa (Unsplash)
+                -->
+                <img 
+                    src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=500&q=80"
+                    alt="Análise de dados de marketing em uma tela de notebook"
+                    class="image"
+                >
             </div>
         </section>
 
+        <!-- ===== COMO FUNCIONA ===== -->
+        <!-- Explica o método da imersão em passos claros -->
         <section class="container">
             <h2>Como funciona</h2>
+
+            <!-- Grid com 3 colunas -->
             <div class="grid-3">
+
+                <!-- Card 1 -->
                 <div class="step-card">
                     <span class="step-icon">📊</span>
                     <h3>Diagnóstico</h3>
                     <p>Analisamos seu momento atual e gargalos.</p>
                 </div>
+
+                <!-- Card 2 -->
                 <div class="step-card">
                     <span class="step-icon">🎯</span>
                     <h3>Estratégia</h3>
                     <p>Criamos a oferta e o plano de aquisição.</p>
                 </div>
+
+                <!-- Card 3 -->
                 <div class="step-card">
                     <span class="step-icon">🚀</span>
                     <h3>Escala</h3>
                     <p>Foco em conversão e métricas de lucro.</p>
                 </div>
+
             </div>
         </section>
 
+        <!-- ===== PLANOS / INGRESSOS ===== -->
+        <!-- Seção alvo do CTA principal -->
         <section id="planos" class="container">
             <h2>Escolha seu ingresso</h2>
+
+            <!-- Grid com os tipos de ingresso -->
             <div class="grid-3">
+
+                <!-- Plano Classic -->
                 <div class="card">
                     <h3 class="plan-title">Classic</h3>
                     <p class="plan-price">R$ 497</p>
                     <a href="#" class="btn-outline">Comprar</a>
                 </div>
+
+                <!-- Plano VIP -->
                 <div class="card featured">
+                    <!-- Badge para chamar atenção -->
                     <span class="badge">Recomendado</span>
                     <h3 class="plan-title">VIP</h3>
                     <p class="plan-price">R$ 997</p>
                     <a href="#" class="btn-red">Comprar</a>
                 </div>
+
+                <!-- Plano Camarote -->
                 <div class="card">
                     <h3 class="plan-title">Camarote</h3>
                     <p class="plan-price">R$ 1.997</p>
                     <a href="#" class="btn-outline">Comprar</a>
                 </div>
+
             </div>
         </section>
 
+        <!-- ===== FAQ (DESAFIO)===== -->
+        <!-- Uso da tag <details> garante interação sem JavaScript -->
         <section class="container faq-section">
             <h2>Perguntas Frequentes</h2>
+
             <div class="faq-wrapper">
-                
+
+                <!-- Pergunta 1 -->
                 <details class="faq-item">
-                    <summary class="faq-title">Para quem é a Imersão Mesa 4X?</summary>
+                    <summary class="faq-title">
+                        Para quem é a Imersão Mesa 4X?
+                    </summary>
                     <div class="faq-content">
-                        <p>É ideal para empreendedores, diretores de marketing e líderes de vendas que precisam estruturar processos e escalar seus resultados com previsibilidade e dados reais.</p>
+                        <p>
+                            É ideal para empreendedores, diretores de marketing e líderes de vendas que precisam estruturar processos e escalar seus resultados com previsibilidade e dados reais.
+                        </p>
                     </div>
                 </details>
 
+                <!-- Pergunta 2 -->
                 <details class="faq-item">
-                    <summary class="faq-title">Preciso ter conhecimento técnico avançado?</summary>
+                    <summary class="faq-title">
+                        Preciso ter conhecimento técnico avançado?
+                    </summary>
                     <div class="faq-content">
-                        <p>Não. Os frameworks apresentados vão do básico ao avançado, focando na estratégia e na gestão, para que você saiba exatamente o que cobrar do seu time ou agência.</p>
+                        <p>
+                            Não. Os frameworks apresentados vão do básico ao avançado, focando na estratégia e na gestão.
+                        </p>
                     </div>
                 </details>
 
+                <!-- Pergunta 3 -->
                 <details class="faq-item">
-                    <summary class="faq-title">As aulas ficarão gravadas?</summary>
+                    <summary class="faq-title">
+                        As aulas ficarão gravadas?
+                    </summary>
                     <div class="faq-content">
-                        <p>Sim! Todos os participantes terão acesso às gravações e aos materiais complementares (planilhas e frameworks) por 12 meses após a imersão.</p>
+                        <p>
+                            Sim! O acesso às gravações e materiais será liberado por 12 meses após a imersão.
+                        </p>
                     </div>
                 </details>
 
             </div>
         </section>
+
     </main>
 
+    <!-- ===== FOOTER / RODAPÉ ===== -->
     <footer>
         <div class="footer">
+            <!-- Informações legais e copyright -->
             <p class="copyright">
                 &copy; 2026 Mesa 4X — V4 Company | Unidade Colli&Co. <br>
                 Todos os direitos reservados.
             </p>
         </div>
     </footer>
-</body>
 
+</body>
 </html>
