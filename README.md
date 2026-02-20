@@ -85,6 +85,12 @@ Volte para a pasta principal:
 cd ..
 ```
 
+entre na pasta do email: 
+
+```text
+cd email
+```
+
 Abra o arquivo index.html no navegador
 
 Para testar a responsividade:
